@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Computer Science Engineering notes and resources for students" />
+    <meta name="keywords" content="CSE, Computer Science, Engineering, Notes, Study Material" />
+    <title>CSEVerse - CSE Notes & Resources</title>
+
+    <!-- ✅ Link CSS -->
+    <link rel="stylesheet" href="cse.css" />
+</head>
+
+<body>
+
+    <!-- Header with Navigation -->
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#" class="logo-link">
+                        <img src="CSEVerse Logo.png" alt="C" class="logo-img" />
+                        <span class="logo-text">CSEVerse</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#notes" class="nav-link">Notes</a></li>
+                    <li class="nav-item"><a href="#subjects" class="nav-link">Subjects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <h1 class="hero-heading">Welcome to CSEVerse CSE Notes</h1>
+            <p class="hero-description">Your comprehensive resource for Computer Science Engineering study
+                materials, notes, and academic resources.</p>
+            <div class="hero-actions">
+                <a href="#subjects" class="cta-button">Explore Subjects</a>
+                <a href="#notes" class="cta-button-secondary">Browse Notes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+
+    <section id="subjects" class="subjects-section">
+        <div class="subjects-container">
+            <h2 class="section-heading">Core Subjects</h2>
+            <p class="section-description">Select a subject to access notes and study materials</p>
+            <div class="subjects-grid">
+
+                <div class="subject-card" id="computer-programming">
+                    <div class="subject-icon">🖥</div>
+                    <div class="subject-content">
+                        <h3 class="subject-title">Computer Programming</h3>
+                        <p class="subject-description">C language, loops, arrays, functions</p>
+                    </div>
+                </div>
+
+                <div class="subject-card" id="scripting-language">
+                    <div class="subject-icon">🐍</div>
+                    <div class="subject-content">
+                        <h3 class="subject-title">Scripting Language (Python)</h3>
+                        <p class="subject-description">Syntax, modules, file handling</p>
+                    </div>
+                </div>
+
+                <div class="subject-card" id="data-structures">
+                    <div class="subject-icon">📊</div>
+                    <div class="subject-content">
+                        <h3 class="subject-title">Data Structures</h3>
+                        <p class="subject-description">Stacks, queues, trees, linked lists</p>
+                    </div>
+                </div>
+
+                <div class="subject-card" id="cso">
+                    <div class="subject-icon">🧠</div>
+                    <div class="subject-content">
+                        <h3 class="subject-title">Computer System Organization</h3>
+                        <p class="subject-description">CPU, memory, instruction cycle</p>
+                    </div>
+                </div>
+
+                <div class="subject-card" id="algorithms">
+                    <div class="subject-icon">⚙</div>
+                    <div class="subject-content">
+                        <h3 class="subject-title">Algorithms</h3>
+                        <p class="subject-description">Sorting, searching, time complexity</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Notes Section -->
+
+    <section id="notes" class="notes-section">
+        <div class="notes-container">
+            <h2 class="section-heading">Notes & Resources</h2>
+
+            <!-- Upload Section -->
+
+            <div class="upload-section">
+                <h3 class="upload-heading">Upload New Notes</h3>
+                <form class="upload-form" id="notes-upload-form">
+                    <div class="form-group">
+                        <label for="subject-select" class="form-label">Subject</label>
+                        <select id="subject-select" class="form-select" name="subject">
+                            <option value="">Select Subject</option>
+                            <option value="computer-programming">🖥 Computer Programming</option>
+                            <option value="python">🐍 Scripting Language (Python)</option>
+                            <option value="data-structure">📊 Data Structure</option>
+                            <option value="cso">🧠 Computer System Organization</option>
+                            <option value="algorithms">⚙ Algorithms</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes-title" class="form-label">Notes Title</label>
+                        <input type="text" id="notes-title" class="form-input" name="title"
+                            placeholder="Enter notes title" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pdf-upload" class="form-label">Upload PDF</label>
+                        <input type="file" id="pdf-upload" class="form-input-file" name="pdf" accept=".pdf" />
+                    </div>
+                    <button type="submit" class="upload-button">Upload Notes</button>
+                </form>
+            </div>
+
+            <!-- Notes Display Section -->
+
+            <div class="notes-display">
+                <h3 class="notes-display-heading">Available Notes</h3>
+                <div class="notes-grid">
+
+                    <!-- Notes will be displayed here after uploading -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-heading">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-info-heading">Contact Information</h3>
+                    <address class="contact-details">
+                        <p class="contact-item"><strong>Email:</strong>
+                            <a href="mailto:example@email.com" class="contact-link">example@email.com</a>
+                        </p>
+                        <p class="contact-item"><strong>Department:</strong> Computer Science Engineering</p>
+                        <p class="contact-item"><strong>Institution:</strong> Shantiniketan Institute of Polytechnic</p>
+                    </address>
+                </div>
+                <div class="contact-form-section">
+                    <h3 class="contact-form-heading">Send a Message</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Name</label>
+                            <input type="text" id="contact-name" class="form-input" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email</label>
+                            <input type="email" id="contact-email" class="form-input" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea id="contact-message" class="form-textarea" name="message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="contact-submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="footer-text">© CSEVerse | CSE Dept. | Email: example@email.com</p>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#notes" class="footer-link">Notes</a>
+                    <a href="#subjects" class="footer-link">Subjects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom-text">Built with ❤ for CSE students</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ✅ Link JavaScript -->
+
+    <script src="cse.js"></script>
+</body>
+
+</html>
